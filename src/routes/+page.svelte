@@ -20,7 +20,7 @@
 				return { src: Waving, class: 'w-46' };
 			case y < 200:
 				return { src: Shocked, class: 'w-54' };
-			case y < height:
+			case y < height - 50:
 				return { src: Falling, class: 'w-50' };
 			default:
 				return { src: Splat, class: 'w-80' };
