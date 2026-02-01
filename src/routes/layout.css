@@ -1,1 +1,11 @@
 @import 'tailwindcss';
+
+.rendering-pixelated {
+	image-rendering: pixelated;
+}
+
+@layer base {
+	body {
+		@apply bg-black text-white;
+	}
+}
