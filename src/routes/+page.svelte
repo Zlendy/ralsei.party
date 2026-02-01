@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import Waving from '$lib/assets/ralsei/waving.webp';
 	import Shocked from '$lib/assets/ralsei/shocked.webp';
 	import Falling from '$lib/assets/ralsei/falling.webp';
@@ -11,8 +9,6 @@
 	let height = $state(0);
 
 	let audio_played = $state(false);
-
-	onMount(() => {});
 
 	const image: { src: string; class: string } = $derived.by(() => {
 		switch (true) {
